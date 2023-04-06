@@ -1,12 +1,17 @@
 import allWards from "../wards";
+import { wardsPerDistrict } from "../wards";
 
-const wardData = allWards();
 
 const WardSelect = (props) => {
+  const data =
+    props.district == ""
+      ? allWards()
+      : wardsPerDistrict(props.district.toString());
+
   return (
     <select name="ward" id="ward" onChange={props.onChange}>
       <option value="">Select ward</option>
-      {wardData.map((ward, id) => {
+      {data.map((ward, id) => {
         return (
           <option key={id} value={ward}>
             {ward}

@@ -29,6 +29,8 @@ function App() {
   const regionChangeHandler = (e) => {
     setRegion(e.target.value);
   };
+
+
   const wardChangeHandler = (e) => {
     setWard(e.target.value);
   };
@@ -47,12 +49,12 @@ function App() {
         </section>
         <section id="districts">
           <h3>Select Your District</h3>
-          <DistrictSelect onChange={districtChangeHandler} />
+          <DistrictSelect onChange={districtChangeHandler} region={region} />
         </section>
 
         <section id="wards">
           <h3>Select Your Ward</h3>
-          <WardSelect onChange={wardChangeHandler} />
+          <WardSelect onChange={wardChangeHandler} district={district} />
         </section>
         <section id="form-controls">
           <button type="submit" className="button" onClick={handleSubmit}>

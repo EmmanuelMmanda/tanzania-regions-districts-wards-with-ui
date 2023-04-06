@@ -17,7 +17,7 @@ export default function alldistrict() {
 
 export function districtsPerRegion(regionName) {
   try {
-    const data = readFileSync(_Districtfile);
+    const data = districtFile;
     let DistrictsPerRegion = [];
     forEach(data["features"], (regionObject) => {
       if (regionObject["properties"]["region"] == regionName) {

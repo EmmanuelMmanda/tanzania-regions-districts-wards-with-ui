@@ -4,9 +4,9 @@ const regionsData = regions();
 
 const RegionSelect = (props) => {
   return (
-    <select name="region" id="region" onChange={props.onChange}>
+    <select name="region" id="region"  onChange={props.onChange}>
       <option value="">Select Region</option>
-      {regionsData.map((region) => {
+      {regionsData.map((region) => { 
         return (
           <option key={region} value={region}>
             {region}

@@ -1,12 +1,17 @@
+import { useState } from "react";
 import alldistrict from "../Districts";
-
-const districtData = alldistrict();
+import { districtsPerRegion } from "../Districts";
 
 const DistrictSelect = (props) => {
+  const data =
+    props.region == ""
+      ? alldistrict()
+      : districtsPerRegion(props.region.toString() + " Region");
+
   return (
     <select name="district" id="district" onChange={props.onChange}>
       <option value="">Select district</option>
-      {districtData.map((district, id) => {
+      {data.map((district, id) => {
         return (
           <option value={district} key={id}>
             {district}

@@ -9,6 +9,9 @@
 
 .App {
   text-align: center;
+  border: 0.2px solid #2c2c2c;
+  box-shadow: 2px 2px 2px #272727;
+  padding: 30px;
 }
 h3 {
   margin: 0;
@@ -23,18 +26,22 @@ select {
   border: 0.3px solid #454545;
 }
 
-button {
+#form-controls button {
   margin: 1.5rem 0.5rem ;
   padding: 0.5rem;
   width: 100%;
-  cursor: pointer;
-  outline: none;
+  cursor: pointer;  outline: none;
   border: none;
 }
 
-button:active {
-  outline: none;
+#form-controls button:active {
+  background-color: #460c0c;
 }
+#form-controls button:hover {
+  background-color: #181818;
+
+}
+
 
 #results {
   margin: 2rem 0;
