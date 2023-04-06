@@ -1,5 +1,5 @@
-import allWards from "../wards";
-import { wardsPerDistrict } from "../wards";
+import allWards from "../Wards";
+import { wardsPerDistrict } from "../Wards";
 
 
 const WardSelect = (props) => {
