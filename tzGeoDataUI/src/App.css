@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+h3 {
+  margin: 0;
+  padding: 0;
+}
+select {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  border: 0.3px solid #454545;
+}
+
+button {
+  margin: 1.5rem 0.5rem ;
+  padding: 0.5rem;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+button:active {
+  outline: none;
+}
+
+#results {
+  margin: 2rem 0;
+  padding: 0.5rem;
+  width: 100%;
+  cursor: pointer;
+  background-color: hsl(0, 0%, 17%);
+}
+.results {
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  margin: 0 10px;
+  padding: 0;
+  text-align: left;
+}
+.result-box {
+  margin: 0px;
+  padding: 5px;
+  text-align: left;
+  background-color: #1d1d1d;
+
+}
+code {
+  width: 100%;
+}
