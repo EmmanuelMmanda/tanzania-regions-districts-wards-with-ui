@@ -2,4 +2,4 @@
 
 Included React UI for Tanzania Regions Wards Districts with responsive Selects.
 
-<img src="./demo.PNG" width="100%"/>
+<img src="https://github.com/EmmanuelMmanda/tanzania-regions-districts-wards-with-ui/blob/main/demo.png" width="100%"/>
